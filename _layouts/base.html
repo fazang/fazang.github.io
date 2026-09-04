@@ -18,18 +18,20 @@
 
 <body>
 
-  <div class="header">
+  <div>
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
     {%- assign page_titles = site.pages | map: 'title' | compact %}
     <a rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
   </div>
 
-  <div class="content" aria-label="Content">
+  <hr>
+
+  <div aria-label="Content">
     {{ content }}
   </div>
 
-  <div class="footer">
+  <div>
     <data value="{{ '/' | relative_url }}"></data>
     <div>&copy;2026 佛法藏</div>
   </div>

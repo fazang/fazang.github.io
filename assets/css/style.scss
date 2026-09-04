@@ -4,16 +4,12 @@
 
 body {
   font-size: 1em;
-  font-family: simsun, mingliu, san-serif;
+  font-family: simfang, simsun, mingliu, san-serif;
 }
 
-.header {
-  text-align: center;
-}
-
-.content {
-
-}
-
-.footer {
+a {
+  color: blue;
+  &:hover, &:visited, &:active {
+    color: blue;
+  }
 }
