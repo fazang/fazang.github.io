@@ -33,6 +33,8 @@ theme: minima
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
+    - jekyll-paginate
+    - jekyll-sitemap
 #
 # Uncomment the following setting if you wish to disable deprecation warnings
 #   from newer versions of sass converter. Adapt as required.
@@ -91,3 +93,4 @@ show_excerpts: false
 #     list. Set below key to `true` to not have the link to feed rendered as
 #     part of social-links list.
 #   hide_site_feed_link: false
+timezone: Asia/Beijing
