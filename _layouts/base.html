@@ -18,26 +18,20 @@
 
 <body>
 
-  <div class="site-header">
-    <div class="wrapper">
-      {%- assign default_paths = site.pages | map: "path" -%}
-      {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
-      {%- assign page_titles = site.pages | map: 'title' | compact %}
-      <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-    </div>
+  <div class="header">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
+    {%- assign page_titles = site.pages | map: 'title' | compact %}
+    <a rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
   </div>
 
-  <div class="page-content" aria-label="Content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
+  <div class="content" aria-label="Content">
+    {{ content }}
   </div>
 
-  <div class="site-footer h-card">
-    <data class="u-url" value="{{ '/' | relative_url }}"></data>
-    <div class="wrapper">
-      &copy;2026 佛法藏
-    </div>
+  <div class="footer">
+    <data value="{{ '/' | relative_url }}"></data>
+    <div>&copy;2026 佛法藏</div>
   </div>
 
 </body>
