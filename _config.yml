@@ -61,17 +61,17 @@ minima:
 #     If you wish to link only specific pages in the site-navigation, use this
 #     and list the `path` property (as represented via Liquid) of the pages in
 #     the order they should be rendered.
+#
+#   Minima date format.
+#     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
+#     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
+    date_format: "%Y/%m/%d"
+#
 nav_pages:
     - about.md
 #
 #   Set to `true` to show excerpts on the homepage.
 show_excerpts: false
-#
-#   Minima date format.
-#     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
-#     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
-date_format: "%Y/%m/%d"
-#
 #   Social Media Links.
 #     Renders icons via Font Awesome Free webfonts CDN, based on ordered list of
 #     entries. Valid entry keys:
