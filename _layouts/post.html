@@ -1,36 +1,8 @@
 ---
 layout: base
 ---
-<div itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div style="padding-bottom: 5px; border-bottom: 1px solid #aaa;">
-    <div itemprop="name headline">{{ page.title | escape }}</div>
-    <div>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {% assign pdate = page.date | date_to_xmlschema %}
-      {%- if page.modified_date %}<span>Published:</span>{% endif %}
-      <time datetime="{{ pdate }}" itemprop="datePublished">
-        {{ pdate | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-        <span>•</span>
-        <span>Updated:</span>
-        {%- assign mdate = page.modified_date | date_to_xmlschema %}
-        <time datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
-      {%- if page.author %}
-      <div class="{% unless page.modified_date %}force-inline {% endunless %}post-authors">
-        {%- for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name">{{ author }}</span></span>
-          {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      </div>
-      {%- endif %}
-    </div>
-  </div>
+<div itemscope itemtype="http://schema.org/BlogPosting">
 
   <div>
     {{ content }}
@@ -47,4 +19,4 @@ layout: base
   {% endif -%}
 
   <a href="{{ page.url | relative_url }}" hidden></a>
-  </div>
+</div>
