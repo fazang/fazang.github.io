@@ -27,7 +27,7 @@ layout: base
       <li>
         <div>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>&nbsp;
-          <span>{{ post.date | date: date_format }}</span>
+          {%- comment -%}<span>{{ post.date | date: date_format }}</span>{%- endcomment -%}
         </div>
         {%- if site.minima.show_excerpts -%}
           {{ post.excerpt }}
