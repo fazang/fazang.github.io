@@ -97,3 +97,6 @@ timezone: Asia/Shanghai
 #
 #  paginate: 20
 permalink: /:title:output_ext
+
+sass:
+    style: compressed
