@@ -96,3 +96,4 @@ show_excerpts: false
 timezone: Asia/Shanghai
 #
 #  paginate: 20
+permalink: /posts/:title:output_ext
