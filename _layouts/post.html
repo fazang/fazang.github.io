@@ -8,15 +8,5 @@ layout: base
     {{ content }}
   </div>
 
-  {% if jekyll.environment == 'production' -%}
-    {% if page.comments == false -%}
-    <div>
-      Comments have been disabled for this post.
-    </div>
-    {% else -%}
-      {%- include comments.html -%}
-    {% endif -%}
-  {% endif -%}
-
   <a href="{{ page.url | relative_url }}" hidden></a>
 </div>
