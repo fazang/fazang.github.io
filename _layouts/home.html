@@ -2,54 +2,57 @@
 layout: base
 ---
 
-<div>
-  {%- if page.title -%}
-    <div>{{ page.title }}</div>
-  {%- endif -%}
+{%- if page.title -%}
+  <div>{{ page.title }}</div>
+{%- endif -%}
 
-  {{ content }}
+{{ content }}
+
+{% if site.paginate %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{%- if posts.size > 0 -%}
+
+  <ul>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in posts -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>&nbsp;{%- comment -%}<span>{{ post.date | date:
+      date_format }}</span>{%- endcomment -%}
+        {%- if site.minima.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-  {%- if posts.size > 0 -%}
     <ul>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+      {%- if paginator.previous_page %}
         <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>&nbsp;{%- comment -%}<span>{{ post.date | date: date_format }}</span>{%- endcomment -%}
-          {%- if site.minima.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+          <a href="{{ paginator.previous_page_path | relative_url }}" title="Go to Page {{ paginator.previous_page }}">
+            {{ paginator.previous_page }}
+          </a>
         </li>
-      {%- endfor -%}
-    </ul>
+      {%- else %}
+        <li>•</li>
+      {%- endif %}
 
-    {% if site.paginate %}
-      <ul>
-        {%- if paginator.previous_page %}
-          <li>
-            <a href="{{ paginator.previous_page_path | relative_url }}" title="Go to Page {{ paginator.previous_page }}">
-              {{ paginator.previous_page }}
-            </a>
-          </li>
-        {%- else %}
-          <li>•</li>
-        {%- endif %}
-          <li>{{ paginator.page }}</li>
-        {%- if paginator.next_page %}
-          <li>
-            <a href="{{ paginator.next_page_path | relative_url }}" title="Go to Page {{ paginator.next_page }}">
-              {{ paginator.next_page }}
-            </a>
-          </li>
-        {%- else %}
-          <li>•</li>
-        {%- endif %}
-      </ul>
-    {%- endif %}
-  {%- endif -%}
-</div>
+      <li>{{ paginator.page }}</li>
+
+      {%- if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path | relative_url }}" title="Go to Page {{ paginator.next_page }}">
+            {{ paginator.next_page }}
+          </a>
+        </li>
+      {%- else %}
+        <li>•</li>
+      {%- endif %}
+    </ul>
+  {%- endif %}
+
+{%- endif -%}
