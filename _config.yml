@@ -35,6 +35,4 @@ minima:
 
 permalink: /:title:output_ext
 
-# paginate: 20
-
 timezone: Asia/Shanghai
