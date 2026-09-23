@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 摘经
+permalink: /quotes/
 ---
 
 {% assign quotes = site.quotes %}
