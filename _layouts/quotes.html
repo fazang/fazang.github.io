@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+{% assign quotes = site.quotes %}
+
+{%- if quotes.size > 0 -%}
+
+  <ul>
+    {%- for quote in quotes -%}
+      <li>
+        <a href="{{ quote.url | relative_url }}">{{ quote.title | escape }}</a>
+        {%- if site.minima.show_excerpts -%}
+          {{ quote.excerpt }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+{%- endif -%}
