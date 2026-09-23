@@ -2,12 +2,6 @@
 layout: base
 ---
 
-{%- if page.title -%}
-  <div>{{ page.title }}</div>
-{%- endif -%}
-
-{{ content }}
-
 {% if site.paginate %}
   {% assign posts = paginator.posts %}
 {% else %}
