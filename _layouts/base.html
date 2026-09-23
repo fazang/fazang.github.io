@@ -16,7 +16,14 @@
 <body>
 
   <div>
-    <a rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+   
+    {%- if page.url contains 'quotes' -%}
+       <a rel="author" href="{{ '/' | relative_url }}">佛經</a>&nbsp;
+       <strong>摘經</strong>
+    {% else -%}
+       <strong>佛經</strong>&nbsp;
+       <a href="/quotes">摘經</a>
+    {% endif -%}
     <hr>
   </div>
 
@@ -26,7 +33,7 @@
 
   <div>
     <data value="{{ '/' | relative_url }}"></data>
-    <div>&copy;2026</div>
+    <div>&copy;2026 {{ site.title | escape }}</div>
   </div>
 
 </body>
