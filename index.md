@@ -1,9 +1,58 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
-layout: home
+layout: base
 ---
+
+{%- if page.title -%}
+  <div>{{ page.title }}</div>
+{%- endif -%}
+
+{{ content }}
+
+{% if site.paginate %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{%- if posts.size > 0 -%}
+
+  <ul>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in posts -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>&nbsp;{%- comment -%}<span>{{ post.date | date:
+      date_format }}</span>{%- endcomment -%}
+        {%- if site.minima.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  {% if site.paginate %}
+    <ul>
+      {%- if paginator.previous_page %}
+        <li>
+          <a href="{{ paginator.previous_page_path | relative_url }}" title="Go to Page {{ paginator.previous_page }}">
+            {{ paginator.previous_page }}
+          </a>
+        </li>
+      {%- else %}
+        <li>•</li>
+      {%- endif %}
+
+      <li>{{ paginator.page }}</li>
+
+      {%- if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path | relative_url }}" title="Go to Page {{ paginator.next_page }}">
+            {{ paginator.next_page }}
+          </a>
+        </li>
+      {%- else %}
+        <li>•</li>
+      {%- endif %}
+    </ul>
+  {%- endif %}
+
+{%- endif -%}

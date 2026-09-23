@@ -1,20 +1,19 @@
 ---
-layout: base
+layout: page
+title: 摘经
 ---
 
 {% assign quotes = site.quotes %}
 
 {%- if quotes.size > 0 -%}
 
-  <ul>
+  <div>
     {%- for quote in quotes -%}
-      <li>
+      <div>
         <a href="{{ quote.url | relative_url }}">{{ quote.title | escape }}</a>
-        {%- if site.minima.show_excerpts -%}
-          {{ quote.excerpt }}
-        {%- endif -%}
-      </li>
+        <p>{{ quote.content | markdownify }}</p>
+      </div>
     {%- endfor -%}
-  </ul>
+  </div>
 
 {%- endif -%}
