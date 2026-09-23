@@ -12,7 +12,7 @@ permalink: /quotes/
     {%- for quote in quotes -%}
       <div>
         <a href="{{ quote.url | relative_url }}">{{ quote.title | escape }}</a>
-        <p>{{ quote.content | markdownify }}</p>
+        <div>{{ quote.content | markdownify }}</div>
       </div>
     {%- endfor -%}
   </div>
