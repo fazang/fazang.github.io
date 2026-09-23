@@ -8,13 +8,13 @@ permalink: /quotes/
 
 {%- if quotes.size > 0 -%}
 
-  <div>
+  <ul>
     {%- for quote in quotes -%}
-      <div>
+      <li>
         <a href="{{ quote.url | relative_url }}">{{ quote.title | escape }}</a>
         {%- comment -%}<div>{{ quote.content | markdownify }}</div>{%- endcomment -%}
-      </div>
+      </li>
     {%- endfor -%}
-  </div>
+  </ul>
 
 {%- endif -%}
