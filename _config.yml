@@ -29,8 +29,8 @@ sass:
 minima:
     skin: classic
     date_format: "%Y/%m/%d"
-    nav_pages:
-       - about.md
+    # nav_pages:
+    #   - about.md
     show_excerpts: false
 
 permalink: /:title:output_ext
