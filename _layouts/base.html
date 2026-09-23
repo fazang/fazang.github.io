@@ -16,19 +16,13 @@
 <body>
 
   <div>
-
-    <a rel="author" href="{{ '/' | relative_url }}">佛經</a>
-    <a href="/quotes">摘經</a>
-   
-    {%- comment -%}
     {%- if page.url contains 'quotes' -%}
        <a rel="author" href="{{ '/' | relative_url }}">佛經</a>
-       <strong>摘經</strong>
+       <a href="/quotes" style="font-weight: bold;">摘經</a>
     {% else -%}
-       <strong>佛經</strong>
+       <a rel="author" href="{{ '/' | relative_url }}" style="font-weight: bold;">佛經</a>
        <a href="/quotes">摘經</a>
     {% endif -%}
-    {%- endcomment -%}
     <hr>
   </div>
 
