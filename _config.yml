@@ -36,3 +36,8 @@ minima:
 permalink: /:title:output_ext
 
 timezone: Asia/Shanghai
+
+collections:
+    quotes:
+        output: true
+        permalink: /quotes/:name
