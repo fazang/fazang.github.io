@@ -10,7 +10,7 @@ body {
 
 a {
   color: blue;
-  text-decoration-thickness: from-font;
+  // text-decoration-thickness: from-font;
   &:hover, &:visited, &:active, &:focus {
     color: blue;
   }
