@@ -15,7 +15,8 @@
 
 <body>
 
-  <div>
+  <div class="header">
+    <div class="container">
     {%- if page.url contains 'quotes' -%}
        <a rel="author" href="{{ '/' | relative_url }}">佛經</a>
        <a href="/quotes" style="font-weight: bold;">摘經</a>
@@ -23,16 +24,20 @@
        <a rel="author" href="{{ '/' | relative_url }}" style="font-weight: bold;">佛經</a>
        <a href="/quotes">摘經</a>
     {% endif -%}
-    <hr>
+    </div>
   </div>
 
-  <div aria-label="Content">
-    {{ content }}
+  <div aria-label="Content" class="content">
+    <div  class="container">
+      {{ content }}
+    </div>
   </div>
 
-  <div>
-    <data value="{{ '/' | relative_url }}"></data>
-    <div>&copy;2026 {{ site.title | escape }}</div>
+  <div class="footer">
+    <div class="container">
+      <data value="{{ '/' | relative_url }}"></data>
+      <div>&copy;2026 {{ site.title | escape }}</div>
+    </div>
   </div>
 
 </body>

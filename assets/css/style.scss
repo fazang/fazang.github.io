@@ -6,6 +6,7 @@ body {
   font-family: SimSun, "Songti SC", "Songti TC", MingLiU, FangSong, STFangSong, serif;
   letter-spacing: 0.15em;
   line-height: 1.35;
+  margin: 0;
 }
 
 a {
@@ -18,5 +19,16 @@ a {
 
 ul {
   padding-left: 0;
+  margin: 0;
   list-style: none;
+}
+
+.container {
+  padding: 8px;
+}
+
+.header {
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 1px 0 #cfcfcf;
+  background-color: aliceblue;
 }
