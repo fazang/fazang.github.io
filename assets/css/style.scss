@@ -32,9 +32,9 @@ ul {
 }
 
 .header {
-  border-bottom: 1px solid #aaa;
-  box-shadow: 0 1px 0 #cfcfcf;
   background-color: aliceblue;
+  // border-bottom: 1px solid #aaa;
+  // box-shadow: 0 1px 0 #cfcfcf;
   position: relative;
   z-index: 9999;
 }
@@ -45,7 +45,7 @@ ul {
 
 .footer {
   padding-bottom: 5px;
-  border-bottom: 1px solid #aaa;
-  box-shadow: 0 1px 1px #afafaf;
   background-color: white;
+  // border-bottom: 1px solid #aaa;
+  // box-shadow: 0 1px 1px #afafaf;
 }
