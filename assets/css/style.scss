@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+.content {
+  background-color: white;
+}
+
 .container {
   padding: 8px;
 }
@@ -31,4 +35,11 @@ ul {
   border-bottom: 1px solid #aaa;
   box-shadow: 0 1px 0 #cfcfcf;
   background-color: aliceblue;
+}
+
+.footer {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 1px 1px #afafaf;
+  background-color: white;
 }
