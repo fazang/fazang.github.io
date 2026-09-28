@@ -41,8 +41,8 @@
   </div>
 
   {%- if page.url == '/' -%}
-  <div style="background-color: beige;">
-    <div class="container">
+  <div>
+    <div class="container" style="padding: 0 8px;">
       <p>略说大乘信根门</p>
 <p>悟文</p>
 <p>众生即心，即心即佛；心佛众生，三者无别。<br>
@@ -61,6 +61,7 @@
 心转假用，生死涅槃；心转真用，二法无异。<br>
 只这一心，大藏明珠；众生所遗，悟者方知。</p>
     </div>
+    {%- include utterances.html -%}
   </div>
   {%- endif -%}
 
