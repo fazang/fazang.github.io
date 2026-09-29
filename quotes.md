@@ -4,7 +4,7 @@ title: 摘经
 permalink: /quotes/
 ---
 
-{% assign quotes = site.quotes %}
+{% assign quotes = site.quotes | sort: 'date' %}
 
 {%- if quotes.size > 0 -%}
 
