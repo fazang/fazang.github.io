@@ -8,7 +8,7 @@ permalink: /quotes/
 
 {%- if quotes.size > 0 -%}
 
-  <ul>
+  <ul class="quote-list">
     {%- for quote in quotes -%}
       <li>
         <a href="{{ quote.url | relative_url }}">{{ quote.title | escape }}</a>
