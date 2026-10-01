@@ -33,8 +33,6 @@ ul {
 
 .header {
   background-color: aliceblue;
-  // border-bottom: 1px solid #aaa;
-  // box-shadow: 0 1px 0 #cfcfcf;
   position: relative;
   z-index: 9999;
 }
@@ -46,11 +44,18 @@ ul {
 .footer {
   padding-bottom: 5px;
   background-color: white;
-  // border-bottom: 1px solid #aaa;
-  // box-shadow: 0 1px 1px #afafaf;
 }
 
 .quote-list {
   padding-left: 1em;
   list-style: circle;
+}
+
+.ming {
+  padding: 1px 0;
+  background-color: ghostwhite;
+  border-top: 1px solid #aaa;
+  .container {
+    padding: 0 8px;
+  }
 }
