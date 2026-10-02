@@ -38,6 +38,6 @@ permalink: /:title:output_ext
 timezone: Asia/Shanghai
 
 collections:
-    quotes:
+    highlights:
         output: true
-        permalink: /quotes/:path:output_ext
+        permalink: /highlights/:path:output_ext
