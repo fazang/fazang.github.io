@@ -1,35 +1,27 @@
-{% assign crumbs = page.dir | split: '/' | reject: '' %}
+<p>
+  <span>当前位置：</span>
 
-<nav class="breadcrumb">
-  <ol>
-    <li>
-      <a href="{{ '/' | prepend: site.baseurl }}">
-        <span>首页</span>
-      </a>
-    </li>
+  {%- if page.url == '/' -%}
+    <span>首页</span>
+  {%- endif -%}
 
-    {% assign pos = 2 %}
-    {% assign path_acc = '/' %}
+  {%- if page.url contains 'quotes' -%}
 
-    {% for seg in crumbs %}
-
-      {% assign path_acc = path_acc | append: seg | append: '/' %}
-      {% assign crumb_url = path_acc | prepend: site.baseurl %}
-
-      <li>
-        <a href="{{ crumb_url }}">
-          <span>{{ seg | capitalize }}</span>
-        </a>
-      </li>
-
-      {% assign pos = pos | plus:1 %}
-
-    {% endfor %}
-
-    {% if page.title %}
-    <li>
+    {%- if page.url == 'quotes/' -%}
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <span>/</span>
+      <span>摘经</span>
+    {%- else -%}
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <span>/</span>
+      <a href="/quotes/">摘经</a>
+      <span>/</span>
       <span>{{ page.title }}</span>
-    </li>
-    {% endif %}
-  </ol>
-</nav>
+    {%- endif -%}
+
+  {%- else -%}
+    <a href="{{ '/' | relative_url }}">首页</a>
+    <span>/</span>
+    <span>{{ page.title }}</span>
+  {%- endif -%}
+</p>
