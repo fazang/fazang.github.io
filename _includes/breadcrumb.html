@@ -3,25 +3,27 @@
 
   {%- if page.url == '/' -%}
     <span>首页</span>
-  {%- endif -%}
+  {%- else -%}
 
-  {%- if page.url contains 'quotes' -%}
+    {%- if page.url contains 'quotes' -%}
 
-    {%- if page.url == 'quotes/' -%}
-      <a href="{{ '/' | relative_url }}">首页</a>
-      <span>/</span>
-      <span>摘经</span>
+      {%- if page.url == 'quotes/' -%}
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <span>/</span>
+        <span>摘经</span>
+      {%- else -%}
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <span>/</span>
+        <a href="/quotes/">摘经</a>
+        <span>/</span>
+        <span>{{ page.title }}</span>
+      {%- endif -%}
+
     {%- else -%}
       <a href="{{ '/' | relative_url }}">首页</a>
-      <span>/</span>
-      <a href="/quotes/">摘经</a>
       <span>/</span>
       <span>{{ page.title }}</span>
     {%- endif -%}
 
-  {%- else -%}
-    <a href="{{ '/' | relative_url }}">首页</a>
-    <span>/</span>
-    <span>{{ page.title }}</span>
   {%- endif -%}
 </p>
