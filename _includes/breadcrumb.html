@@ -1,0 +1,35 @@
+{% assign crumbs = page.dir | split: '/' | reject: '' %}
+
+<nav class="breadcrumb">
+  <ol>
+    <li>
+      <a href="{{ '/' | prepend: site.baseurl }}">
+        <span>首页</span>
+      </a>
+    </li>
+
+    {% assign pos = 2 %}
+    {% assign path_acc = '/' %}
+
+    {% for seg in crumbs %}
+
+      {% assign path_acc = path_acc | append: seg | append: '/' %}
+      {% assign crumb_url = path_acc | prepend: site.baseurl %}
+
+      <li>
+        <a href="{{ crumb_url }}">
+          <span>{{ seg | capitalize }}</span>
+        </a>
+      </li>
+
+      {% assign pos = pos | plus:1 %}
+
+    {% endfor %}
+
+    {% if page.title %}
+    <li>
+      <span>{{ page.title }}</span>
+    </li>
+    {% endif %}
+  </ol>
+</nav>

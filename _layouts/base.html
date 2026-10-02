@@ -24,19 +24,17 @@
 
   <div class="header">
     <div class="container">
-    {%- if page.url contains 'quotes' -%}
-       <a rel="author" href="{{ '/' | relative_url }}">佛经</a>
-       <a href="/quotes" style="font-weight: bold;">摘经</a>
-    {% else -%}
-       <a rel="author" href="{{ '/' | relative_url }}" style="font-weight: bold;">佛经</a>
+       <a href="{{ '/' | relative_url }}">佛经</a>
        <a href="/quotes">摘经</a>
-    {% endif -%}
     </div>
   </div>
 
-  <div aria-label="Content" class="content">
-    <div  class="container">
+  <div class="content">
+    <div class="container">
+      {%- include breadcrumb.html -%}
+
       <p><mark>本站经论使用「CBETA 汉文电子佛典集成」中的繁体版本。</mark></p>
+
       {{ content }}
     </div>
   </div>
