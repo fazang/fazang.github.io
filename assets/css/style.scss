@@ -40,6 +40,10 @@ ul {
   background-color: aliceblue;
   position: relative;
   z-index: 9999;
+  .container {
+    display: flex;
+    gap: 10px;
+  }
 }
 
 .content {
@@ -49,6 +53,11 @@ ul {
 .footer {
   padding-bottom: 8px;
   background-color: white;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 5px;
 }
 
 .quote-list {
