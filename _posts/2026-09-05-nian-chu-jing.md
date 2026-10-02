@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 念處經
+title: 念处经
 ---
 
 念處經（出中阿含因品）

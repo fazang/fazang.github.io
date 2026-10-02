@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 佛說十二頭陀經
+title: 佛说十二头陀经
 ---
 
 佛說十二頭陀經

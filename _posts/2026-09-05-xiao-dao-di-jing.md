@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 小道地經
+title: 小道地经
 ---
 
 小道地經

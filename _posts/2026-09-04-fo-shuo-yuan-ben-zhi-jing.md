@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 佛說緣本致經
+title: 佛说缘本致经
 ---
 
 佛說緣本致經

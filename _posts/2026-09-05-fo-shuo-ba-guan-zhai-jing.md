@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 佛說八關齋經
+title: 佛说八关斋经
 ---
 
 佛說八關齋經

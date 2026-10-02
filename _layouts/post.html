@@ -4,6 +4,8 @@ layout: base
 
 <div itemscope itemtype="http://schema.org/BlogPosting">
   
+  {%- include note.html -%}
+  
   {{ content }}
 
   <a href="{{ page.url | relative_url }}" hidden></a>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 苦陰經
+title: 苦阴经
 ---
 
 苦陰經（出中阿含因品）

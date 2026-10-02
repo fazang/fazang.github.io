@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 十善業道經
+title: 十善业道经
 ---
 
 十善業道經

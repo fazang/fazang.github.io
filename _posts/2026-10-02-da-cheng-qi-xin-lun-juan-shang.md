@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 大乘起信論卷上
+title: 大乘起信论卷上
 ---
 
 大乘起信論卷上

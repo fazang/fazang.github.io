@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 四十二章經
+title: 四十二章经
 ---
 
 四十二章經

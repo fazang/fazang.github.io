@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 佛說阿含正行經
+title: 佛说阿含正行经
 ---
 
 佛說阿含正行經

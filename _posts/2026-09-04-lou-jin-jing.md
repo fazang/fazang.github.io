@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 漏盡經
+title: 漏尽经
 ---
 
 漏盡經（出中阿含七法品）

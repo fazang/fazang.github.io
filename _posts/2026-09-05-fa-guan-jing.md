@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 法觀經
+title: 法观经
 ---
 
 法觀經
