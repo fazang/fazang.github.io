@@ -12,6 +12,10 @@ body {
   line-height: 1.25;
   margin: 0;
   background-color: white;
+
+  @media (max-width: 767.98px) {
+    font-size: 1.25em;
+  }
 }
 
 a {
