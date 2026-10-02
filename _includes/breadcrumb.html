@@ -8,11 +8,11 @@
     {%- if page.url contains 'quotes' -%}
 
       {%- if page.url == '/quotes/' -%}
-        <a href="{{ '/' | relative_url }}">首页</a>
+        <span>首页</span>
         <span>/</span>
         <span>摘经</span>
       {%- else -%}
-        <a href="{{ '/' | relative_url }}">首页</a>
+        <span>首页</span>
         <span>/</span>
         <span>摘经</span>
         <span>/</span>
@@ -20,7 +20,7 @@
       {%- endif -%}
 
     {%- else -%}
-      <a href="{{ '/' | relative_url }}">首页</a>
+      <span>首页</span>
       <span>/</span>
       <span>佛经</span>
       <span>/</span>
