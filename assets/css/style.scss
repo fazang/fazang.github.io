@@ -27,9 +27,9 @@ a {
 }
 
 ul {
-  padding-left: 1em;
+  padding-left: 0;
   margin: 0;
-  list-style: circle;
+  list-style: none;
 }
 
 .container {
@@ -61,8 +61,8 @@ ul {
 }
 
 .highlights-list {
-  padding-left: 1em;
-  list-style: circle;
+  // padding-left: 1em;
+  // list-style: circle;
 }
 
 .ming {
