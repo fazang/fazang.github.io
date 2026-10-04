@@ -1,0 +1,17 @@
+{
+  "editor.fontSize": 13,
+  "editor.fontFamily": "SimSun, Consolas, 'Courier New', monospace",
+  "editor.minimap.sectionHeaderFontSize": 13,
+  "editor.inlineSuggest.fontFamily": "SimSun, Consolas, 'Courier New', monospace",
+  "screencastMode.fontSize": 48,
+  "chat.editor.fontSize": 13,
+  "chat.editor.fontWeight": "SimSun, Consolas, 'Courier New', monospace",
+  "chat.fontFamily": "SimSun, Consolas, 'Courier New', monospace",
+  "debug.console.fontFamily": "SimSun, Consolas, 'Courier New', monospace",
+  "debug.console.fontSize": 13,
+  "terminal.integrated.fontFamily": "",
+  "notebook.markup.fontFamily": "",
+  "notebook.markup.fontSize": 13,
+  "markdown.preview.fontSize": 13,
+  "markdown.preview.fontFamily": "SimSun, Consolas, 'Courier New', monospace"
+}
