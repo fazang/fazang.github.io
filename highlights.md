@@ -1,8 +1,15 @@
 ---
-layout: page
+layout: base
 title: 摘经
 permalink: /highlights/
 ---
+
+<p class="breadcrumb">
+  <span>当前位置：</span>
+  <span>首页</span>
+  <span>/</span>
+  <span>{{ page.title }}</span>
+</p>
 
 {% assign highlights = site.highlights | sort: 'date' | reverse %}
 

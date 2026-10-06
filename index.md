@@ -1,6 +1,11 @@
 ---
-layout: page
+layout: base
 ---
+
+<p class="breadcrumb">
+  <span>当前位置：</span>
+  <span>首页</span>
+</p>
 
 {% if site.paginate %}
   {% assign posts = paginator.posts %}
