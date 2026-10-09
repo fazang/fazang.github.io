@@ -3,7 +3,6 @@ layout: base
 ---
 
 <p class="breadcrumb">
-  <span>位置：</span>
   <span>首页</span>
 </p>
 
