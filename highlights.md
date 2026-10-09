@@ -5,7 +5,7 @@ permalink: /highlights/
 ---
 
 <p class="breadcrumb">
-  <span>当前位置：</span>
+  <span>位置：</span>
   <span>首页</span>
   <span>/</span>
   <span>{{ page.title }}</span>
