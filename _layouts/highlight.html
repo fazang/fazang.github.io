@@ -10,7 +10,9 @@ layout: base
 
 <div itemscope itemtype="http://schema.org/BlogPosting">
 
-  <p>{{ page.title }}</p>
+  {%- assign date_format = site.minima.date_format | default: "%Y/%-d/b" -%}
+
+  <p>{{ page.title }}<span>{{ page.date | date: date_format }}</span></p>
 
   {%- include note.html -%}
 
