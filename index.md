@@ -3,7 +3,7 @@ layout: base
 ---
 
 <p class="breadcrumb">
-  <span>首页</span>
+  <span>佛经</span>
 </p>
 
 {% if site.paginate %}
