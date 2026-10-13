@@ -1,6 +1,6 @@
 ---
 layout: base
-title: 摘经
+title: 摘要
 permalink: /highlights/
 ---
 

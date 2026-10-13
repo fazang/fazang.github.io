@@ -3,7 +3,7 @@ layout: base
 ---
 
 <p class="breadcrumb">
-  <span>佛经</span>
+  <span>经论</span>
 </p>
 
 {% if site.paginate %}
