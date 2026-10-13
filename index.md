@@ -15,14 +15,11 @@ layout: base
 {%- if posts.size > 0 -%}
 
   <ul>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- assign date_format = site.minima.date_format -%}
     {%- for post in posts -%}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>&nbsp;{%- comment -%}<span>{{ post.date | date:
       date_format }}</span>{%- endcomment -%}
-        {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
       </li>
     {%- endfor -%}
   </ul>
