@@ -25,6 +25,7 @@
 
   <div class="header">
     <div class="container">
+      <span>{{ site.title | escape }}»</span>
       <a href="{{ '/' | relative_url }}"
       >
        经论
@@ -45,7 +46,7 @@
   <div class="footer">
     <div class="container" style="padding: 0 8px;">
       <data value="{{ '/' | relative_url }}"></data>
-      <div>&copy;2026 {{ site.title | escape }}</div>
+      <div>&copy;2026</div>
     </div>
   </div>
 
