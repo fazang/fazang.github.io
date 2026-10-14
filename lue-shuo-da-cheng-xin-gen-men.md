@@ -1,5 +1,7 @@
 ---
 layout: base
+title: 略说大乘信根门
+permalink: /lue-shuo-da-cheng-xin-gen-men/
 ---
 
 略说大乘信根门
