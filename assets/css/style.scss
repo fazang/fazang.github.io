@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$font-family: font-family: times, FangSong, STFangSong, SimSun, "Songti SC", "Songti TC", MingLiU, serif;
+
 *,
 ::before,
 ::after {
@@ -14,7 +16,7 @@ html, body {
 
 body {
   font-size: 1em;
-  font-family: times, FangSong, STFangSong, SimSun, "Songti SC", "Songti TC", MingLiU, serif;
+  font-family: $font-family;
   margin: 0;
   background-color: white;
   @media (max-width: 767.98px) {
@@ -42,6 +44,10 @@ a {
   &:hover, &:visited, &:active, &:focus {
     color: blue;
   }
+}
+
+pre {
+  font-family: $font-family;
 }
 
 .container {
